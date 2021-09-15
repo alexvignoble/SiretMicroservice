@@ -60,12 +60,12 @@ pipeline {
             }
         }
 
-        stage('Run QA tests') {
+        stage('Run QA tests for DEV') {
             when {
-                not { changeRequest() }
+                branch 'master'
             }
             steps {
-                echo 'TODO: Wait for deployment to finish and trigger Non-Regression tests'
+                echo 'TODO: Wait for deployment to finish and trigger Non-Regression tests for DEV env'
             }
         }
 
@@ -77,5 +77,15 @@ pipeline {
                 echo 'TODO: Deployment to TST env'
             }
         }
+
+        stage('Run QA tests for TST') {
+            when {
+                branch pattern: "release-\\d+", comparator: "REGEXP"
+            }
+            steps {
+                echo 'TODO: Wait for deployment to finish and trigger Non-Regression tests for TST env'
+            }
+        }
+
     }
 }

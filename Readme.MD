@@ -62,6 +62,9 @@ docker run -p 8080:8080 <tag>
 Note: Portforwarding is needed in order to access the default 8080 port on which the microservice is exposing its endpoints
 
 
-[api]: <https://github.com/AlexVinogradov/rss-aggregator/blob/master/api/Readme.MD>
-[int-tests]: <https://github.com/AlexVinogradov/rss-aggregator/blob/master/integration-tests/Readme.MD>
-[example]: <https://github.com/AlexVinogradov/rss-aggregator/blob/master/example-app/Readme.MD>
+### Reference Documentation
+For further reference, please consider the following sections:
+
+* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.5.4/maven-plugin/reference/html/)
+* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.5.4/maven-plugin/reference/html/#build-image)
