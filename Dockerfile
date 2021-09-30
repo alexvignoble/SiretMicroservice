@@ -12,6 +12,6 @@ COPY src src/
 #Build project
 RUN mvn -U -DskipTests clean package
 
-RUN cp -r /app/target/companyservice*.jar /app/companyservice.jar
+RUN cp -r /app/target/siretmicroservice*.jar /app/siretmicroservice.jar
 
-ENTRYPOINT ["java","-jar","/app/companyservice.jar"]
+ENTRYPOINT ["java","-jar","/app/siretmicroservice.jar"]
